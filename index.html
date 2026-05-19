@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doğum Günün Kutlu Olsun ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:pink;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    margin-top:100px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.gallery{
+    display:none;
+    margin-top:50px;
+}
+
+img{
+    width:250px;
+    border-radius:20px;
+    margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="home">
+    <h1>Doğum Günün Kutlu Olsun ❤️</h1>
+
+    <button onclick="openGallery()">
+        Tıklayınız
+    </button>
+</div>
+
+<div class="gallery" id="gallery">
+    <h2>Seninle olan anılarımız ❤️</h2>
+
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+    <img src="foto4.jpg">
+</div>
+
+<script>
+function openGallery(){
+    document.getElementById("home").style.display="none";
+    document.getElementById("gallery").style.display="block";
+}
+</script>
+
+</body>
+</html>
